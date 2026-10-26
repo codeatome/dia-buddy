@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserProfile {
   private String username;
   private String diabetesType;
@@ -6,6 +9,7 @@ public class UserProfile {
   private String animalPersonality;
   private String cuisine;
   private String language;
+  private List<HealthLog> healthLogs;
 
   public UserProfile (String username, String diabetesType, String animal, String animalName, String animalPersonality, String cuisine, String language) {
     this.username = username;
@@ -15,6 +19,7 @@ public class UserProfile {
     this.animalPersonality = animalPersonality;
     this.cuisine = cuisine;
     this.language = language;
+    this.healthLogs = new Arrraylist<>();
   }
   public String getUsername() {
     return username;
@@ -36,5 +41,22 @@ public class UserProfile {
   }
   public String getLanguage() {
     return language;
+  }
+  public List<HealthLog> getHealthLogs() {
+    return healthLogs;
+  }
+  public void addHealthLog(HealthLog log) {
+    this.healthLogs.add(log);
+  }
+
+  public String getHealthHistorySummary() {
+    if (healthLogs.isEmpty())
+      return "No health logs recorded yet.";
+    }
+    StringBuilder sb = new StringBuilder();
+    for (HealthLog log: healthLogs) {
+      sb.append(log.getDate()).append(" (").append(log.getTime()).append(") -").append("Glucose: ").append(log.getGlucose()).append(" mg/dl, Note: ").append(log.getNotes()).append("; ");
+    }  
+    return sb.toString();
   }
 }
