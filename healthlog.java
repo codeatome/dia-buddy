@@ -9,11 +9,11 @@ public class HealthLog {
   private String activityDescription;
   private int activityDurationMin;
   private double a1cPercentage;
-  public HealthLog (String date, String time, String logType, int glucoseValue, String glucoseContext, String mealDescription, String mealType, String activtyDescription, int activityDurationMin, double a1cpercentage) {
+  public HealthLog (String date, String time, int glucoseValue, String logType,  String glucoseContext, String mealDescription, String mealType, String activtyDescription, int activityDurationMin, double a1cpercentage) {
     this.date = date;
     this.time = time;
-    this.logType = logType;
     this.glucoseValue = glucoseValue;
+    this.logType = logType;
     this.glucoseContext = glucoseContext;
     this.mealDescription = mealDescription;
     this.mealType = mealType;
