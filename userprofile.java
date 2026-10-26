@@ -19,28 +19,28 @@ public class UserProfile {
         this.animalPersonality = animalPersonality;
         this.cuisinePreference = cuisinePreference;
         this.languagePreference = languagePreference;
-        this.healthLogs = new ArrayList<>();
+        this.healthLogs = new ArrayList<>(); 
     }
 
     public String getNickname() { return nickname; }
-    public String getUsername() { return nickname; } 
+    public String getUsername() { return nickname; }
 
     public String getDiabetesType() { return diabetesType; }
 
     public String getAnimalType() { return animalType; }
-    public String getAnimal() { return animalType; } 
+    public String getAnimal() { return animalType; }
 
     public String getCompanionName() { return companionName; }
-    public String getAnimalName() { return companionName; } 
+    public String getAnimalName() { return companionName; }
 
     public String getAnimalPersonality() { return animalPersonality; }
-    public String getPersonality() { return animalPersonality; } 
+    public String getPersonality() { return animalPersonality; }
 
     public String getCuisinePreference() { return cuisinePreference; }
-    public String getCuisine() { return cuisinePreference; } 
+    public String getCuisine() { return cuisinePreference; }
 
     public String getLanguagePreference() { return languagePreference; }
-    public String getLanguage() { return languagePreference; } 
+    public String getLanguage() { return languagePreference; }
 
     public List<HealthLog> getHealthLogs() { return healthLogs; }
     public void addHealthLog(HealthLog log) { this.healthLogs.add(log); }
@@ -57,3 +57,5 @@ public class UserProfile {
         return sb.toString();
     }
 }
+}
+```[cite: 4]
