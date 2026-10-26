@@ -6,6 +6,7 @@ public class CulturalFoodCoach {
         List<String> suggestions = new ArrayList<>();
         String cuisine = user.getCuisinePreference();
         if (cuisine == null) cuisine = "General";
+
         switch (cuisine.toLowerCase()) {
             case "indian":
                 suggestions.add("Multigrain Roti with Dal and Stir-fried Greens");
@@ -20,8 +21,9 @@ public class CulturalFoodCoach {
                 suggestions.add("Greek Salad with Grilled Chicken and Olive Oil");
                 break;
             default:
-                suggestions.add("Aim for a balanced plate with lean protein, fiber-rich vegetables, and complex carbs.");
+                suggestions.add("Try to balance your plate with lean protein, fiber-rich vegetables, and complex carbs.");
                 break;
         }
         return suggestions;
     }
+}
