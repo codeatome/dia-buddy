@@ -7,7 +7,7 @@ public class UserProfile {
   private String cuisine;
   private String language;
 
-  public Userprofile (String username, String diabetesType, String animal, String animalName, String animalPersonality, String cuisine, String language) {
+  public UserProfile (String username, String diabetesType, String animal, String animalName, String animalPersonality, String cuisine, String language) {
     this.username = username;
     this.diabetesType = diabetesType;
     this.animal = animal;
