@@ -21,9 +21,6 @@ public class HealthLog {
     this.activityDurationMin = activityDurationMin;
     this.a1cPercentage = a1cPercentage;
   }
-  public String getLogType() {
-    return logType;
-  }
   public String getDate() {
     return date;
   }
@@ -32,6 +29,9 @@ public class HealthLog {
   }
   public int getGlucoseValue() {
     return glucoseValue;
+  }
+  public String getLogType() {
+    return logType;
   }
   public String getGlucoseContext() {
     return glucoseContext;
