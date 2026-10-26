@@ -1,12 +1,12 @@
-import java.util.Arraylist;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PatternInsight {
   public static List<String> patternRecognition(List<HealthLog> logs) {
     List<String> insights = new ArrayList<>();
-    int highEveningCOunt = 0;
+    int highEveningCount = 0;
     int totalGlucoseLogs = 0;
-    for (HealthLog log : log) {
+    for (HealthLog log : logs) {
       if ("Glucose".equals(log.getLogType())) {
         totalGlucoseLogs++;
         if (log.getGlucoseValue() > 140 && "Evening".equalsIgnoreCase(log.getGlucoseContext())) {
