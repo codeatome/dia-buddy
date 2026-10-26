@@ -11,7 +11,7 @@ public class App {
     logs.add(new HealthLog("2025-10-24", "21:00", 110, "Morning"));
     List<String> userInsights = PatternInsight.generateInsights(logs);
     System.out.println("--- " + user.getAnimalName() + "'s Dashboard ---");
-    System.out.println("User: " + user.getUsername() + " | Diabetes Type: " + user.getDiabetesType()));
+    System.out.println("User: " + user.getUsername() + " | Diabetes Type: " + user.getDiabetesType());
     System.out.println("\nInsights and Pattern Recognition:");
     for (String insight: userInsights) {
       System.out.println("**" + insight + "**");
