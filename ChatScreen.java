@@ -17,7 +17,7 @@ public class ChatScreen extends JPanel {
 
         String avatarEmoji = getAvatarEmoji(user.getAnimalType());
         JLabel titleLabel = new JLabel(
-            avatarEmoji + " " + user.getAnimalName() + " (" + user.getAnimalType() + ")", 
+            avatarEmoji + " " + user.getCompanionName() + " (" + user.getAnimalType() + ")", 
             SwingConstants.CENTER
         );
         titleLabel.setFont(new Font("Arial", Font.BOLD, 16));
@@ -32,8 +32,8 @@ public class ChatScreen extends JPanel {
         chatLog.setWrapStyleWord(true);
         chatLog.setFont(new Font("SansSerif", Font.PLAIN, 14));
         
-        chatLog.setText("[" + user.getAnimalName() + "]: Hi " + user.getUsername() + 
-            "! I'm here to help with your " + user.getCuisine() + 
+        chatLog.setText("[" + user.getCompanionName() + "]: Hi " + user.getNickname() + 
+            "! I'm here to help with your " + user.getCuisinePreference() + 
             " meal ideas and wellness goals. What can I do for you today?\n\n");
 
         JScrollPane scrollPane = new JScrollPane(chatLog);
@@ -41,7 +41,7 @@ public class ChatScreen extends JPanel {
 
         JPanel inputPanel = new JPanel(new BorderLayout(5, 5));
         inputField = new JTextField();
-        JButton sendButton = new JButton(Localization.get(user.get.Language(), "send"));
+        JButton sendButton = new JButton(Localization.get(user.getLanguagePreference(), "send"));
 
         inputPanel.add(inputField, BorderLayout.CENTER);
         inputPanel.add(sendButton, BorderLayout.EAST);
