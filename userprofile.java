@@ -57,5 +57,3 @@ public class UserProfile {
         return sb.toString();
     }
 }
-}
-```[cite: 4]
