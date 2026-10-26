@@ -18,8 +18,8 @@ public class HealthLog {
     this.mealDescription = mealDescription;
     this.mealType = mealType;
     this.activityDescription = activityDescription;
-    this.activityDuration = activityDuration;
-    this.a1cpercentage = a1cpercentage;
+    this.activityDurationMin = activityDurationMin;
+    this.a1cPercentage = a1cPercentage;
   }
   public String getLogType() {
     return logType;
