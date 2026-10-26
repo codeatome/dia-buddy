@@ -42,8 +42,8 @@ public class HealthLog {
   public String getMealType() {
     return mealType;
   }
-  public String getActivityType() {
-    return activityType;
+  public String getActivityDescription() {
+    return activityDescription;
   }
   public int getActivityDurationMin() {
     return activityDurationMin;
