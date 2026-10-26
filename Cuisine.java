@@ -74,3 +74,4 @@ public class CuisineScreen extends JPanel {
         suggestionsArea.setText(sb.toString());
         foodImageView.setText("[Food Coach]");
     }
+}
